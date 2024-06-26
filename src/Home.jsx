@@ -22,7 +22,7 @@ const QrScannerComponent = () => {
   };
 
   const previewStyle = {
-    height: 240,
+    height: 380,
     width: 320,
   };
 
@@ -50,8 +50,14 @@ const QrScannerComponent = () => {
         onError={handleError}
         onScan={handleScan}
         className="border [background:#16163D] rounded-[10px] border-[2px] border-white"
-        facingMode="environment"
+        constraints={{
+          audio: false,
+          video: { facingMode: "environment" }
+        }}
       />
+      <br/>
+      <p className="text-[#444444]" >or</p>
+      <br/>
       <input
         type="text"
         value={inputValue}
