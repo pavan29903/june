@@ -15,6 +15,10 @@ const router = createBrowserRouter([
     element:<QrScannerComponent/>
   },
   {
+    path:"/start",
+    element:<QrScannerComponent/>
+  },
+  {
     path:"/Next",
     element:<Clue></Clue>
   }
