@@ -50,6 +50,7 @@ const QrScannerComponent = () => {
         onError={handleError}
         onScan={handleScan}
         className="border [background:#16163D] rounded-[10px] border-[2px] border-white"
+        facingMode="environment"
       />
       <input
         type="text"
